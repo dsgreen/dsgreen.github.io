@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if IE 7]>     <html class="ie ie7 lte-ie9 lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>     <html class="ie ie8 lte-ie9 lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9]>     <html class="ie ie9 lte-ie9" lang="en"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <title>Responsive Video Play Button</title>
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Demonstration of a responsive video play button">
+        <meta name="author" content="Douglas Green">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/video.css" rel="stylesheet">
+
+        <!--[if lt IE 9]>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <header role="banner" id="top">
+            <nav role="navigation" class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/">Responsive Video Play Button</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <div id="content" class="container">
+            <div class="row">
+
+                <main id="main" role="main" class="col-xs-12 col-sm-7">
+                    <p>This is some test content over here in the main column. Resize the page, and see how the video play button resizes consistently. 
+                        You may need to customize the <code>background-size</code> values to suit your needs. This has been tested in IE8+, and the latest
+                        versions of Firefox, Chrome, and Safari. IE8 doesn't get the <code>background-size</code> values, but it's good enough.</p>
+                    
+                    <p><strong>HTML</strong></p>
+<pre>
+&lt;div class="videos"&gt;
+    &lt;a href="https://www.youtube.com/watch?v=F5FEj9U-CJM" class="video"&gt;
+        &lt;span&gt;&lt;/span&gt;
+        &lt;img src="https://i1.ytimg.com/vi/F5FEj9U-CJM/maxresdefault.jpg" alt="True Facts About The Mantis Shrimp" /&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</pre>
+
+                    <p><strong>CSS</strong></p>
+<pre>
+.videos img {
+  width:100%;
+  height:auto;
+}
+a.video {
+  float: left;
+  position: relative;
+}
+a.video span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../img/play-btn.png") no-repeat;
+  background-position: 50% 50%;
+  background-size: 300%;
+}
+@media screen and (max-width: 480px) {
+  a.video span {
+    background-size: 400%;
+  }
+}
+</pre>
+
+                </main>
+
+                <aside id="secondary" class="col-xs-12 col-sm-5 videos" role="complementary">
+
+                    <a href="https://www.youtube.com/watch?v=F5FEj9U-CJM" class="video">
+                        <span></span>
+                        <img src="https://i1.ytimg.com/vi/F5FEj9U-CJM/maxresdefault.jpg" alt="True Facts About The Mantis Shrimp" />
+                    </a>
+                    <p><small>Video by Ze Frank</small></p>
+
+                </aside><!--/secondary-->
+
+            </div><!--/.row-->
+        </div><!--/#content.container-->
+
+               
+        <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    </body>
+</html>
