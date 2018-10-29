@@ -1,0 +1,60 @@
+.container-fluid {
+  max-width: 1200px;
+}
+.category-list button {
+	margin-bottom: 0.4em;
+}
+body > footer {
+	margin-top: 24px;
+	margin-bottom: 24px;
+}
+/* blog */
+p.meta,
+ul.categories {
+	padding: 8px 0;
+	border-top: 1px solid #DADADA;
+	border-bottom: 1px solid #DADADA;
+}
+.categories-ttl {
+	margin-top: 12px;
+	margin-right: 14px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.continue {
+	margin-top: 12px;
+	margin-right: 14px;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+.post img + small {
+	display: block;
+	margin-bottom: 6px;
+	font-style: italic;
+}
+.post-nav {
+	padding: 8px 0;	
+}
+#comments {
+	margin-top: 12px;
+}
+#comments label > small > em {
+	font-weight: normal; 
+}
+legend {
+	border-bottom: none;
+}
+/* portfolio */
+.thumbs img {
+	margin: 0 auto;
+}
+.thumbs p {
+	margin-right: auto;
+	margin-left: auto;
+	text-transform:uppercase;
+}
+@media (max-width:768px) and (min-width:500px) {
+	.thumbs p {
+		width: 500px;
+	}
+}
