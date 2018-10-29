@@ -1,0 +1,58 @@
+/* IE8+ */
+.ie8 {
+	color: red\0/;
+}
+/* IE7 */
+*:first-child+html .ie7 { /*also ie8 compatibility mode*/
+	color: red;
+}
+*+html .ie7 { /*also ie8 compatibility mode*/
+	color: red;
+}
+.lteie7 { /*ie7 or less*/
+	*color: red;
+}
+/* IE6 */
+* html .lteie6 { /*ie6 or less*/
+	color: red;
+}
+.lteie6 { /*ie6 or less*/
+	_color: red;
+}
+div.clear {
+	height: 0;
+}
+
+/* possible IE styles needed */
+/*
+footer {
+	background-color: #eaeaea;
+}
+textarea {
+	overflow: auto;
+}
+textarea {
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+label, input, select {
+	line-height: 1.2em;
+}
+textarea {
+	line-height: 1.4em;
+}
+div.check input,
+div.check label {
+	float: none;
+	display: inline;
+}
+input.btn {
+	margin-top: 2em;
+}
+input.check {
+	border: none;
+}
+*/
+/* fix column collapse on link rollover */
+/*.col {
+	height: 100%;
+}*/

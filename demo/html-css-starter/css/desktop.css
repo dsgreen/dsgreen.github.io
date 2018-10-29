@@ -1,0 +1,328 @@
+/* 	
+	HTML/CSS Starter / 071312 DESKTOP
+	Douglas Green / greeninteractive.com
+	Copyright 2012 Some rights reserved
+*/
+/* @group 
+
+FORMS
+-------------------------------------- */
+/* form elements not aligned to baseline grid */
+input, select, textarea {
+	margin-bottom: 0.5em;
+	padding: 0.4em;
+	width: 30em;
+}
+input, select {
+	width: 15em;
+}
+input.btn {
+	margin-bottom: 0;
+	padding: 0.4em;
+	font-weight: bold;
+	text-transform: uppercase;
+	width: 10em;
+	clear: both;
+}
+label.hidden {
+	margin-left: -1000em;
+	width: 0;
+	float: none;
+}
+/* @end */
+/* @group 
+
+LAYOUT
+-------------------------------------- */
+/* set a fixed size container & center it */
+header div.wrap,
+footer div.wrap,
+#content {
+	margin: 0 auto;
+	padding: 0 1em;
+	width: 96em;
+}
+header,
+#content {
+	padding-bottom: 2.4em;
+}
+/* logo: image replacement */
+/*
+header p {
+	margin: 0;
+	width: 000px; -- image width
+	height: 000px; -- image height
+	position: relative;
+	overflow: hidden;
+}
+header p span {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: url(../img/your-logo.png);
+}
+*/
+header p { /* header title */
+	font-weight: bold;
+}
+#content,
+footer {
+	clear: both;
+}
+header nav ul,
+header nav li,
+header nav a {
+	float: left;
+}
+header nav a {
+	padding: 0 0.5em;
+}
+header nav ul {
+	margin-left: 0;
+	font-weight: bold;
+}
+header nav li {
+	display: block;
+	list-style-type: none;
+}
+header nav a {
+	display: block;
+}
+#nav1 a {
+	padding-left: 0;
+}
+header nav a:link,
+header nav a:active,
+header nav a:visited {
+	text-decoration: none;
+}
+footer p {
+	font-size: 1.2em;
+	line-height: 2em;
+	clear: both;
+}
+footer p.top {
+	clear: none;
+}
+#main {
+	float: left;
+}
+#secondary { 
+	float: right;
+}
+#secondary h2,
+#secondary p,
+#secondary li {
+	font-size: 1.2em;
+	line-height: 1.8em;
+}
+#secondary h2 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#secondary ul {
+	margin-left: 0;	
+}
+#secondary li {
+	list-style-type: none;
+}
+#skiplink a {
+	width: 0;
+	height: 0;
+	position: absolute;
+	overflow: hidden;
+}
+#skiplink a:active, 
+#skiplink a:focus {
+	padding: 0.2em;
+	font-size: 1.2em;
+	font-weight: bold;
+	width: auto;
+	height: auto;
+	overflow: visible;
+	top: 0.2em;
+	left: 0.2em;
+	z-index: 5;
+}
+/* @end */
+/* @group 
+
+CLASSES
+-------------------------------------- */
+/* 
+columns:
+ column width   69px
+ column spacing 12px
+ page           960px
+ outer padding  10px
+ total width    980px
+ 12 columns total
+*/
+.col {
+	margin-right: 1.2em;
+	float: left;
+}
+.w-2col  {width: 15em;}	  /* 2 cols */
+.w-10col {width: 79.8em;} /* 10 cols */
+.w-5col  {width: 39.3em;} /* 5 cols */
+.w-7col  {width: 55.5em;} /* 7 cols */
+.w-1-4   {width: 23.1em;} /* 1/4: 3 cols */
+.w-3-4   {width: 71.7em;} /* 3/4: 9 cols */
+.w-1-3   {width: 31.2em;} /* 1/3: 4 cols */
+.w-2-3   {width: 62.4em;} /* 2/3: 8 cols */
+.full    {                /* full width */
+	margin-right: 0;
+	width: 96em;
+}
+.col.last { /* remove right margin on last column in a row */
+	margin-right: 0;
+}
+/* general */
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clear {
+	clear: both;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.hidden {
+	visibility: hidden;
+	height: 0;
+	width: 0;
+	/*
+	alternate:
+	text-indent: -1000em;*/
+}
+.top { /* back to top links */
+	font-weight: bold;
+	text-align: right;
+}
+/* @end */
+/* @group 
+
+COLOR
+-------------------------------------- */
+html,
+header,
+footer {
+	background-color: #eaeaea;
+}
+body {
+	color: #333;
+	background-color: #fff;
+}
+h1, h2, h3, h4, h5, h6,
+th, th a,
+legend {
+	color: #333;
+}
+a,
+a:link,
+a:active,
+a:visited {
+	color: #33c;
+}
+a:hover,
+a:focus {
+	color: #66c;
+}
+header p a,
+header p a:link,
+header p a:active,
+header p a:visited {
+	color: #333;
+}
+header nav a,
+header nav a:link,
+header nav a:active,
+header nav a:visited {
+	color: #333;
+}
+header nav a:hover,
+#body_id #nav1 a,
+#body_id #nav2 a,
+#body_id #nav3 a,
+#body_id #nav4 a,
+#body_id #nav5 a {
+	color: #333;
+}
+footer,
+footer p,
+footer a,
+footer a:link,
+footer a:active,
+footer a:visited {
+	color: #666;
+}
+#skiplink a:active,
+#skiplink a:focus {
+	border: 0.2em solid #ccc;
+	background-color: #dadada;
+}
+abbr[title] {
+	border-bottom: 0.1em dotted #888;
+}
+/* forms */
+input, select, textarea {
+	border: 0.1em solid #eaeaea;
+}
+input:hover, 
+input:focus, 
+input:active, 
+textarea:hover, 
+textarea:focus, 
+textarea:active, 
+select:hover, 
+select:focus, 
+select:active, 
+input.btn:hover {
+	border-color: #ccc;
+}
+input.btn:hover {
+	color: #fff;
+	background-color: #333;
+}
+.req {
+	color: red;
+}
+.comment {
+	margin-bottom: -0.1em;
+	border-bottom: 0.1em solid #eaeaea;
+}
+.author {
+	color: #333;
+}
+/* @end */
+/* @group 
+
+GRID
+-------------------------------------- */
+/* grid overlay */
+/*
+html {
+   position: relative;
+}
+#grid {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: url(../images/960-69-12.png) repeat-y center top;
+}
+*/
+/* grid bg */
+
+html, body, header, footer {
+	background-color: transparent;
+}
+html {
+	background: url(../images/960-69-12.png) repeat-y center top;
+}
+
+/* @end */

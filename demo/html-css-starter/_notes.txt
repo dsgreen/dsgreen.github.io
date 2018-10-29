@@ -1,0 +1,34 @@
+/*
+
+Notes on using relative em unit and standard font sizes.
+Original source: http://clagnut.com/blog/348/
+
+Font Sizes
+----------
+
+body    62.5%   = 10px
+--------------
+h1      2.4em   = 24px
+h2      1.8em   = 18px
+p       1.4em   = 14px
+small   1.2em   = 12px
+etc     1.1em   = 11px
+unit    1em     = 10px
+
+Formulas
+--------
+
+Pixels                                          Ems
+
+page line-height / element font size            = element line-height
+remainder of line-height / element font size    = element margin
+pixel dimension / page font size                = dimension
+
+Examples
+
+page line-height of 24px / 12px font-size       = 2em line-height
+24px h1 that takes up 2 24px lines: 
+48px-24px = 24px remainder / 24px               = 2em margin
+100px dimension / 10px                          = 10em dimension
+
+*/
